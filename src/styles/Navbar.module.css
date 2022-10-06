@@ -1,0 +1,49 @@
+.Sidebar__sidebar__Wrapper{
+    width: 40px;
+    height: 100vh;
+    padding: 4px;
+    box-sizing: border-box;
+    background-color: #0480c9;
+    background-image: linear-gradient(180deg,rgba(0,0,0,.3),rgba(0,0,0,.05));
+    position: fixed;
+    top: 44px;
+    left: 0;
+    box-shadow: -6px 2px 8px 1px #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.Button__Wrapper{
+    width: 32px;
+    height: 32px;
+    
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.Button__White{
+    background-color: #fff;
+}
+
+.Button_Transparent{
+    background-color: transparent;
+    margin-top: 8px;
+}
+
+
+.Button_Icon{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 2px;
+    padding-right: 8px;
+}

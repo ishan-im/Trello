@@ -1,0 +1,65 @@
+.MainConatiner__Wrapper{
+    padding: 4px;
+    background: #0079BF;
+}
+
+
+
+.MainContainer__List__rappper{
+    width: 100%;
+    height: calc(100vh - 142px);
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+
+
+.NewListCard__Wrapper{
+    min-width: 272px;
+    width: 272px;
+    background-color: hsla(0,0%,100%,.2);
+    margin: 0 4px;
+    border-radius: 3px;
+    padding: 10px 8px 8px;
+}
+
+.Add__list{
+    width: 100%;
+    background-color: #EBECF0;
+}
+
+.NewListCard_AddMoreWrapper{
+    display: flex;
+    align-items: center;
+    color: #5e6c84;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 2px 0;
+    cursor: pointer;
+    color: #fff;
+}
+
+.NewListCard__Button__Wrapper{
+    min-width: 272px;
+    width: 272px;
+    background-color: #EBECF0;;
+    margin: 0 4px;
+    border-radius: 3px;
+    padding: 10px 8px 8px;
+}
+
+.icons{
+    margin-right: 4px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.ListCard_TaskListWrapper {
+    min-height: 2px;
+}

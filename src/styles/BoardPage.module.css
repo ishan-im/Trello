@@ -1,0 +1,89 @@
+.BoardPage_TitleWrapper{
+    display: flex;
+    align-items: center;
+    padding: 4px 0 8px;
+    
+}
+
+.BoardPage_BoardTitle{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+    padding: 0 12px;
+    color: #fff;
+    margin: 0;
+}
+
+.BoardPage_StarWrapper{
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    background-color: hsla(0,0%,100%,.3);
+    border-radius: 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+.Star{
+    padding: 8px 7px;
+    font-size: 18px;
+}
+
+
+.BoardPage_Separator{
+    width: 1px;
+    height: 16px;
+    background-color: hsla(0,0%,100%,.3);
+    margin: 8px;
+}
+
+.Button_Secondary{
+    width: max-content;
+    color: #fff;
+    background-color: hsla(0,0%,100%,.3);
+    padding: 0 12px;
+}
+
+
+
+
+.Button_ButtonWrapper {
+    width: 85px;
+    height: 32px;
+   
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.Button_Label{
+    font-size: 14px;
+    
+}
+
+.Button_Icon{
+    width: 30px;
+    height: 30px;
+    top: 1px;
+    position: relative;
+    
+    padding-right: 8px;
+}
+
+.UserAvatar_DefaultAvatar{
+    color: #172b4d;
+    background-color: #dfe1e6;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    margin-left: 4px;
+}

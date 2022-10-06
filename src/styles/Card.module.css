@@ -1,0 +1,155 @@
+.List__Card__Main__Container{
+    min-width: 272px;
+    width: 272px;
+    height: auto;
+    max-height: calc(100vh - 180px);
+    overflow-y: auto;
+    background-color: #ebecf0;
+    margin: 0 4px;
+    border-radius: 3px;
+    padding: 10px 8px 8px;
+}
+
+
+.List__Card__Title__Wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    overflow-y: auto;
+}
+
+.List__Card__Title{
+    margin: 0;
+    color: #172b4d;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 4px 8px 10px;
+}
+
+.ListCard__TaskList__Wrapper{
+    min-height: 2px;
+}
+
+
+.Task__Card__Wrapper{
+    margin: 8px 0;
+}
+
+
+.Task__Card__Main__Container{
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgb(9 30 66 / 25%);
+    padding: 6px 8px 2px;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+
+.TaskCrd__TaskLabel__Wrapper{
+    background-color: #eb5a46;
+    width: 40px;
+    height: 8px;
+    margin: 0 4px 4px 0;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.TaskCard__Message{
+    margin: 0 0 4px;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #172b4d;
+}
+
+.NewTask__Add__Card__Wrapper{
+
+    display: flex;
+    align-items: center;
+    color: #5e6c84;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 2px 0;
+    cursor: pointer;
+
+}
+
+
+.New__TaskCard__Input__Card{
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid #0079bf;
+    border-radius: 3px;
+    outline: none;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+}
+
+
+.New__TaskCard__Button_Wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.Button__btn__Wrapper{
+        /* width: 32px; */
+        height: 32px;
+        background-color: transparent;
+        border: 0;
+        border-radius: 3px;
+        outline: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        color: #fff;
+}
+
+
+.button__Primary{
+
+width: max-content;
+color: #fff;
+background-color: #0079bf;
+padding: 0 12px;
+}
+
+.Button_Label {
+    font-size: 14px;
+}
+
+
+.icons{
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.cross__icons{
+    width: 24px;
+    height: 24px;
+    line-height: 32px;
+    color: #42526e;
+    margin-left: 8px;
+    cursor: pointer;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+}
