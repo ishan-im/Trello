@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# Build Trello clone with React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+<img width="960" alt="Screenshot 2022-10-06 153626" src="https://user-images.githubusercontent.com/76674591/194286174-5165cd09-e194-4016-aa28-b2ed6b036c07.png">
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Create New Project**
 
-### `npm test`
+```cd
+npx create-react-app trello
+cd trello
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Clone the repository**
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+git clone https://github.com/ishan-im/Trello.git 
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+**And open the project in your code editor**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+***
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+In this project we used:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* [Redux](https://redux.js.org/) : for state management of the app
+* [react-beautiful-dnd](https://github.com/atlassian/react-beautiful-dnd) : for horizontal and vertical drop-down of cards
+* [shortid](https://www.npmjs.com/package/shortid) : to generate unique ids
+* [lodash.throttle:](https://www.npmjs.com/package/lodash.throttle) : to handle arrays and functions
+* [react-icons](https://react-icons.github.io/react-icons/) : for icons
 
-## Learn More
+```
+npm install --save redux react-redux react-beautiful-dnd lodash.throttle shortid
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+***
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Start
 
-### Code Splitting
+**Now go to your project directory and start the React development server**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+cd directory
+npm start
+```
+***
 
-### Analyzing the Bundle Size
+***Now this should be your project structure**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
 
-### Making a Progressive Web App
+├── README.md
+├── package-lock.json
+├── package.json
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── components
+    |── lib
+    │── App.js 
+    |── App.css
+    ├── index.css
+    ├── index.js
+    └── styles
+        
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+***
 
-### Advanced Configuration
+* In the **Components** Directory we will manage all our reusable components
+* We will use **lib** directory as **storage** and **state management**
+* We will maintain all our styles in **styles** directory. For styles we will use **css-modules**. If you want to know about **css-modules** [click here](https://css-tricks.com/css-modules-part-1-need/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+***
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* In the **lib** directory we have two files **seed.js** and **store.js**
 
-### `npm run build` fails to minify
+* In store file we will create **reducers** to create new List and Cards. Cards with **drag-and-drop** features.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Each list and cards has unique ids.
+
+* With our reducers in place we can create the store. Let's also persist the store so that our lists and cards are not discarded each time. To save the state we subscribe to store changes with store.subscribe, we call store.getState() to get the current state, we serialize it to JSON and we save it in the localStorage. Then when the app loads we read the state from the localStorage, deserialize it and create the store.
+
+
+* We will initially insert some data in seed.js file and dispatch some actions to create some lists and  cards.
+
+
+***
+
+
+* Components directory has all the building blocks to create new Lists and cards.
+
+
+
+
+This Project is deployed in vercel and it's [live link](https://trello-phi.vercel.app/)
+
+
+
+
+
+
+
+
+
+
